@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulations</title>
+    <style>
+        :root {
+            height: 100%;
+            width: 100%;
+            font-family: 'Cascadia Code SemiBold';
+            color: white;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: rgb(41, 41, 41);
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        canvas {
+            border: 2px solid rgb(255, 255, 255);
+            width: 1500px;
+            height: 750px;
+        }
+
+        .display.groupe {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <head>
+        <h1>Physics simulations JS</h1>
+    </head>
+    <div class="display groupe">
+        <h2 class="display runtime">Runtime : 0s</h2>
+        <h2 class="display fps">Framerate : 0fps</h2>
+    </div>
+    <canvas></canvas>
+    <script src="main.js"></script>
+</body>
+
+</html>
